@@ -113,43 +113,7 @@ const dataOfArr = arrOfJobs.map(j => {
       <p style={styleDelete} onClick={()=>deleting(j.id)} className="delete">X</p>
     </div>
   );
-});// console.log()
-// const [dataForm,setDataForm]=useState({
-//   job:"",
-//   doing:false,
-//   done:false,
-// })
-
-// const[arrOfJobs,setArrOfJobs]=useState([])
-// let styleDoneJob={
-//   color:dataForm.id?"gray":"black",
-//   textDecoration:dataForm.id?"line-through":"none",
-//   // color:dark?"black":"white",
-// }
-
-// useEffect(()=>{
-//   if(dataForm.doing){
-//       setArrOfJobs(prevArr=>[...prevArr,<DoJob key={prevArr.length} 
-//           handleChange={handleChange} 
-//           job={dataForm.job} 
-//           />])
-//       }
-// },[dataForm.doing])
-
-// function handleChange(event){
-//   // event.preventDefault()
-//   const{name,value,checked,type}=event.target
-//   setDataForm(setDataForm=>{
-//       return{
-//           ...setDataForm,
-//           [name]:type==="checkbox"?checked:value
-//       }
-//   })
-// }
-// let copiedData=[]
-
-// useEffect(()=>{
-// },[copiedData])
+});
 const styleInput={
   color:dark?"black":"white",
   boxShadow:dark?"1px 1px 2px 2px hsl(0, 0%, 98%)":"1px 1px 2px 2px black",
