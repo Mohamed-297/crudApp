@@ -1,0 +1,150 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    padding: 50px;
+    background-size: 100% 100% ;
+}
+.nav-content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50vw;
+    
+}
+.para-icon{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.para-icon p{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.para-icon img{
+    cursor: pointer;
+}
+.inputsContainer{
+    display: flex;
+    position: relative;
+    flex: 1;
+}
+.enter-todo {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 0 10px 50px ;
+}
+.checking{
+    position: absolute;
+    top: 37%;
+    margin-left: 20px;
+    background-color: red;
+}
+.do-container{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 2px 2px #eee;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 21%;
+    background: white;
+    border-radius: 5px;;
+}
+.written-jobs-container{
+    width: 100%;
+}
+.written-jobs{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding: 10px 0 10px 20px;
+    align-items: center;
+}
+.job-name {
+    margin: 0 0 0 13px;
+}
+.delete{
+    cursor: pointer;
+    margin: 0 0 0;
+    position: absolute;
+    right: 30px;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: gray;
+    font-size: 10px;
+}
+.container p{
+    margin: 0;
+}
+.whatToShow{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+.whatToShow p{
+    font-size: 12px;
+}
+.whatToShow p:hover{
+    color:blue;
+    cursor: pointer;
+}
+.leftItems{
+    display: flex;
+    justify-content: flex-start;
+}
+.clearComplete{
+    cursor: pointer;
+}
+.clearComplete:hover{
+    color: black;
+}
+main{
+    height: 100vh;
+}
+
+
+@media screen and (max-width:1024px) {
+    
+}
+@media screen and (max-width:768px) {
+    .delete{
+        font-size: 10px;
+    }
+    .job-name{
+        font-size: 10px;
+    }
+    .container p{
+        font-size: 8px;
+    }
+    .enter-todo{
+        font-size: 10px;
+    }
+    .whatToShow{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+}
+@media screen and (max-width:480px) {
+    nav{
+        background-size: 100% ;
+        
+    }
+}
